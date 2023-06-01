@@ -1,0 +1,79 @@
+a{
+text-decoration: none;
+}
+header{
+position: static;
+  
+
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+header img{
+    width:18vw;
+
+}
+
+header p a{
+
+    font-size: 1.5vw;
+    color: black;
+    font-weight: bold;
+
+}
+header p{
+
+}
+header button{
+    
+    background-color: red;
+    font-size: 2vw;
+    height: 35px;
+    border: black 1px solid;
+    border-radius: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+hr#cabecalho_hr{
+    width: 50%;
+    border: 2px solid;
+    border-color: red;
+
+}
+hr#cabecalho_hr2{
+    width: 50%;
+    border: 2px solid;
+    border-color:darkblue;
+    justify-content: right;
+   
+}
+div#linhas{
+    display: flex;
+}
+
+@media (max-width:640px){
+    header  img{
+
+        width: 100px;
+  
+    
+    }
+
+header p a{
+
+    font-size: 8px;
+    color: black;
+    font-weight: bold;
+
+
+}
+header button{
+    height: 20px;
+}
+
+}

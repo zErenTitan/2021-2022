@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações Básicas</title>
+</head>
+<style>
+    button{
+        margin-top: 1vw;
+    }
+</style>
+<body>
+
+
+    <h2>Seja bem vindo ao site de operações básicas.</h2>
+    <form id="form">
+        <p>Digite o primeiro número:</p>
+        <input type="number" id="first_number">
+        <br>
+        <p>Digite o segundo número:</p>
+        <input type="number" id="second_number">
+        <br>
+        <button>Calcular</button>
+    </form>
+    <div id="result"></div>
+    <script>
+        function calculate (event){
+            event.preventDefault()
+            
+
+            let n1 = parseFloat(first_number.value)
+            let n2 = parseFloat(second_number.value)
+
+            let adicao = n1 + n2
+            let subtracao = n1 - n2
+            let multiplicacao = n1 * n2 
+            let divisao = n1 / n2
+
+            result.innerHTML= `
+                <p>${n1} + ${n2} = ${adicao}</p>
+                ${n1} - ${n2} = ${subtracao}
+                <p>${n1} X ${n2} = ${multiplicacao}</p>
+                <p>${n1} / ${n2} = ${divisao}</p>
+           `
+            
+        }   
+       form.addEventListener('submit', calculate)
+        
+      
+    </script>
+    
+</body>
+</html>

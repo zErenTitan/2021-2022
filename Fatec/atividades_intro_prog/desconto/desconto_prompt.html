@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cáculo de desconto</title>
+</head>
+<body>
+    <script>
+        alert('Lista de produtos:\n produto 1:  id = 1 , preço = R$20\n produto 2: id = 2 , preço = R$40\n produto 3: id = 3 , preço = R$100\n produto 4: id = 4 , preço = R$1000 ')
+        let prod_id = prompt('Digite o número do produto desejado:')
+        let prod_desc = prompt('Digite o desconto desejado:') 
+        if(parseFloat(prod_id) == 1){
+            let preco_final = 20 - ((20 * parseFloat(prod_desc)) / 100)
+            document.write('O preço final com o desconto aplicado é de R$', preco_final , '.')
+        }else if(parseFloat(prod_id) == 2){
+            let preco_final =  40 -((40 * parseFloat(prod_desc)) / 100 ) 
+            document.write('O preço final com o desconto aplicado é de R$ ', preco_final,'.')
+        }else if(parseFloat(prod_id) == 3){
+            let preco_final = 100 -(( 100 * parseFloat(prod_desc)) / 100 )
+            document.write('O preço final com o desconto aplicado é de R$', preco_final , '.')
+        }else{
+            let preco_final = 1000 - ((1000 * parseFloat(prod_desc)) / 100) 
+            document.write('O preço final com o desconto aplicado é de R$', preco_final , '.')
+        }
+   
+   
+   
+   
+   </script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+/*Geral*/
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+   
+}
+p.titulo{
+    text-decoration: underline;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+/*------------------------------------*/
+/*Header*/
+
+header{
+    margin: 0;
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    align-items: center;
+    height: 4vw;
+
+    background-color: rgb(24, 119, 196);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 3px solid black;
+}
+header img{
+   
+    width: 3vw;
+    
+}
+div#imgcabecalho{
+    height:4vw;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-right: 3px solid black;
+}
+div#ultimo_top{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:4vw;
+}
+div.cabecalho_top{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:4vw;
+    border-right: 3px solid black;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+   
+}
+
+
+@media (max-width:750px){
+    body header{
+        height: 60px;
+        
+    }
+    body header a{
+        font-size:10px;
+    }
+    div#imgcabecalho{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div#imgcabecalho img{
+        width:25px;
+    }
+    
+    header div#imgcabecalho, header div#ultimo_top, header div.cabecalho_top{
+        height: 60px;
+    }
+    body div#servicos p.titulo{
+        font-size: 22px;
+    }
+    body div#container div#solic_serv div#solic_serv1 p{
+        font-size: 15px;
+    }
+    body div#container div#solic_serv div#solic_serv1 a {
+        font-size:20px;
+        
+    }
+    body div#container{
+        height: 650px;
+        margin-top: 100px;
+    }
+    body div#servicos div#servicos2{
+        height: 200px;
+        font-size: 15px;
+    }
+    body div#solic_serv{
+        height: 200px;
+        padding-bottom: 30px;
+    }
+    body div#container div#sobre {
+        height: 180px;
+        
+    }
+    body div#container p.titulo{
+        font-size: 4vw;
+        
+    }
+    body div#container div#sobre p#conteudo_s{
+        font-size:4vw;
+      
+    }
+    
+    
+   
+}
+header a:hover{
+
+    font-style: italic;
+    color: rgb(199, 197, 197);
+}
+/*------------------------------------*/
+/*DIV CONTAINER*/
+div#container{
+     
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    background-color: rgb(149, 152, 155);
+    margin-top: 8vw;
+    width: 80%;
+    height: auto;
+}
+div#container p.titulo{
+    font-size: 3vw;
+    padding-bottom: 10px;
+}
+/*------------------------------------*/
+/*Serviços*/
+div#servicos{
+    display: flex;
+    flex-direction: column;
+    font-size: 2vw;
+    justify-content: space-evenly;
+}
+
+div#servicos div#servicos2 {
+    
+    height: 25vw;
+    border-bottom: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+div#container div#servicos div#p_serv{
+     
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    
+    justify-content: space-evenly;
+}
+div#container div#servicos img{
+    padding-top: 40px;
+    width: 20vw;
+    height: 20vw;
+}
+
+
+/*------------------------------------*/
+/*Solicitar Serviços*/
+
+div#solic_serv{
+
+    display: flex;
+    flex-direction: column;
+    height: 15vw;
+    justify-content: space-around;
+    text-align: center;
+    border-bottom: 5px solid black;
+}
+div#container div#solic_serv div#solic_serv1 p{
+    font-size: 2vw;
+    padding-bottom: 10px;
+}
+div#container div#solic_serv div#solic_serv1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 5vw;
+}
+div#container div#solic_serv div#solic_serv1 a{
+    font-size:2vw;
+    color: blue;
+    
+    
+}
+
+/*------------------------------------*/
+/*Sobre*/
+
+div#container div#sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    border-bottom: 5px solid black;
+    height: 15vw;
+}
+div#container div#sobre p#conteudo_s{
+    font-size: 1.8vw;
+    text-align: center;
+}
+
+
+/*------------------------------------*/
+/*Footer*/
+footer{
+    margin-top: 200px;
+    width: 100%;
+    color: white;
+    height: 6vw;
+    font-size: 18px;
+    background-color: rgb(55, 57, 59);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    
+   
+}
+@media (max-width:1025px) and (min-width:751px){
+    footer{
+        height:80px;
+        bottom: 0;
+        position: absolute;
+        margin-top: 0px;
+    }
+    div#container div#sobre p#conteudo_s{
+        font-size:2vw;
+      
+    }
+    header a{
+        
+        font-size: 20px;
+       
+    }
+   
+    
+}
+@media (max-width:499px){
+    footer{
+        height:80px;
+        position: relative;
+        margin-top: 35px;
+        font-size: 12px;
+    }
+
+    
+
+}
+footer p{
+    padding-top: 1vw;
+}
+footer div#infos{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: space-around;
+   align-items: center;
+   height: 100%;
+}
+footer div#infos a{
+    text-decoration: none;
+    color: blue;
+    
+}
+footer div#infos a:hover{
+    color: red;
+    
+}

@@ -1,0 +1,304 @@
+
+.nova_os{
+    height: 150vw;
+    
+   
+
+
+}
+
+p input, select, .prods{
+    font-family: Georgia, 'Times New Roman', Times, serif; /*tipo de letra*/
+    font-size: 20px;
+
+}
+/* Cabecalho*/
+h1{
+    font-size: 48px;
+    color: #190e7e;
+    padding: 10px 0;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+/*--------------------------------------------------*/
+
+/*Inputs*/
+input:not([type="checkbox"]){
+ 
+  margin-top: 4px;
+  padding: 10px;    
+  border: 1px solid #7b66f3;
+  
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+ 
+}
+input:not([type="checkbox"]):hover{
+  outline: 0;
+  
+}
+
+/*estilo do botão submit */
+input[type="submit"]{
+ width: 10%;
+  cursor: pointer;  
+  background: #3d9db3;
+  padding: 8px 5px;
+  color: #fff;
+  font-size: 20px;  
+  border: 1px solid #fff;   
+  margin-bottom: 10px;  
+  text-shadow: 0 1px 1px #333;
+  
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  
+  transition: all 0.2s linear;
+  
+}
+input[type="submit"]:hover{
+  background: #3d11a3;
+}
+
+/*marcando os links para mudar de um formulário para outro */
+.link{
+ 
+  background: #e1eaeb;
+  color: #7f7c7c;
+  left: 0px;
+  height: 20px;
+  
+  padding: 17px 30px 20px 30px;
+  font-size: 16px;
+  text-align: right;
+  border-top: 1px solid #dbe5e8;
+
+  -webkit-border-radius: 0 0  5px 5px;
+  border-radius: 0 0  5px 5px;
+}
+.link a {
+  font-weight: bold;
+  background: #f7f8f1;
+  padding: 6px;
+  color: rgb(29, 162, 193);
+  margin-left: 10px;
+  border: 1px solid #cbd518;
+
+  -webkit-border-radius: 4px;
+  border-radius: 4px;  
+
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s  linear;
+}
+.link a:hover {
+  color: #1c19be;
+  background: #f7f7f7;
+  border: 1px solid #4ab3c6;
+
+}
+
+/* estilos para para ambos os formulários */
+input{
+
+  top: 0px;
+ 
+  padding: 18px 6% 60px 6%;
+  margin: 0 0 35px 0;
+  
+  border: 1px solid rgba(147, 184, 189,0.8);
+  
+}
+select{
+  top: 0px;
+  width: 15vw;
+  height: 3.2vw;
+     
+  border: 1px solid #7b66f3;
+  
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+
+  margin: 0 0 35px 0;
+
+}
+#nome{
+  width: 40%;
+  margin-right: 2vw;
+}
+#cpf{
+  
+  width: 14%;
+  margin-right: 2vw;
+}
+#rg{
+  width: 13%;
+  margin-right: 2vw;
+}
+#cnpj{
+  width: 19%;
+}
+#cli_cel{
+  width: 14%;
+  margin-right: 2vw;
+}
+#telefone{
+  width: 11.5vw;
+}
+#cep{
+  width: 12vw;
+  margin-right: 2vw;
+}
+#endereco{
+  width:38vw;
+  margin-right: 2vw;
+}
+#cidade{
+  width:14vw;
+}
+#uf{
+ width: 4vw;
+ margin-right: 2vw;
+}
+#bairro{
+  margin-right: 2vw;
+}
+#numero{
+  width:5vw;
+  
+} 
+#marca{
+  margin-right:2vw ;
+}
+#mod{
+  margin-right: 2vw;
+
+}
+#placa{
+  width: 3.5vw;
+}
+#placa2{
+  width:4.5vw;
+}
+#anal_mec,#serv_solic{
+
+
+     
+  border: 1px solid #7b66f3;
+  
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+
+
+
+}
+#select_pecas{
+  display: inline-flex;
+}
+/*----------------*/
+
+
+
+.peca{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .peca input{
+    width: 5vw;
+  }
+  #fim{
+    margin-bottom: 100px;
+  }
+  .prods_list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding:0 15px;
+    margin-top: 2vw;
+  }
+  .prods_div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0vw 1vw;
+    
+  }
+  .prods_nome{
+    width: 30%;
+  }
+  .prods_marca{
+    width:20%;
+   
+  }
+  .prods_valor{
+    width: 10%;
+  }
+  .prods_unit{
+    width: 10%;
+  }
+  .header_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1vw;
+  }
+  .header_list p {
+    padding:0px;
+    margin: 0px;
+  }
+  .prods_total{
+    width: 10%;
+  }
+.header_serv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding:0 15px;
+    margin-bottom: 1vw;
+  }
+  .serv_nome{
+    width: 40%;
+  }
+  .serv_descricao{
+    width: 40%;
+  }
+  .serv_valor{
+    width: 20%;
+  }
+  .serv_div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0vw 1vw;
+  }
+  .serv_list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding:0 15px;
+    margin-top: 2vw;
+
+  }

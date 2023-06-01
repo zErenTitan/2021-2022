@@ -1,0 +1,48 @@
+body{
+    
+    background-color: white;
+    height: auto;
+    
+
+}
+input:not([type="checkbox"]):hover{
+    outline: 0;
+    
+}
+
+.botoes{
+    margin-top: 2vw;
+    margin-left: 1vw;
+  
+}
+div#tabela{
+   align-items: ce;
+    margin-top: 0vw;
+    font-size: 1.5vw;
+   text-align: center;
+   
+    
+}
+div#busca{
+  
+    margin-left: 1vw;
+}
+
+input:not([type="checkbox"]){
+    font-size:1.1vw;
+    margin-top: 4px;
+    padding: 10px;    
+    border: 1px solid #7b66f3;
+    
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    size: 0.5vw;
+}
+table td.td_nome{
+size:10vw;
+
+}
+

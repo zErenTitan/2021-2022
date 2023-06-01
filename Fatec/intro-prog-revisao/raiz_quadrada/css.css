@@ -1,0 +1,28 @@
+div#container div#conteudo div#inputs input {
+    
+    border: 2px solid rgb(98, 98, 233);
+    border-radius: 6px;
+}
+div#container div#conteudo{
+    display: flex;
+    flex-direction: row;
+}
+div#container div#conteudo div#inputs p{
+    margin-bottom: 0px;
+}
+div#container div#inputs button  {
+    cursor: pointer;
+    margin-top: 16px;
+    background-color: rgb(105, 211, 105);
+    border: 0;
+    border-radius: 6px;
+}
+div#container  button#raiz{
+    margin-top: 49px;
+    height: 20px;
+    background-color: rgb(14, 15, 5);
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}

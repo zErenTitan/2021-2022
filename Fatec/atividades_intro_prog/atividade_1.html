@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+</head>
+<body>
+    <script>
+        document.write('utilizando o document.write separado:<br>')
+        var nome = prompt ('Digite seu nome:')
+        var sobrenome = prompt ('Digite seu sobrenome:')
+        var data_nasc = prompt ('Digite sua data de nascimento:')
+        document.write('Nome Completo: <br>')
+        document.write(nome ,' ',sobrenome,'<br>')
+        document.write('Data de Nascimento: <br>')
+        document.write(data_nasc)
+        // ou
+        document.write('<br>utilizando o document.write junto:<Br>')
+        document.write ('Nome completo:<br> ' ,nome ,' ',sobrenome ,'<br>Data de nascimento:<br>',data_nasc )
+        // ou
+        document.write('<br>utilizando o document.write  usando aspas:<br>')
+        document.write(`nome completo <br> ${nome} ${sobrenome} <br> Data de Nascimento: <br> ${data_nasc}`)
+    </script>
+    
+</body>
+</html>

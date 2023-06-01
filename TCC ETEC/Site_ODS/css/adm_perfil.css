@@ -1,0 +1,46 @@
+input:not([type="checkbox"]){
+ 
+    margin-top: 4px;
+    padding: 10px;    
+    border: 1px solid #7b66f3;
+    
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+   
+}
+input:not([type="checkbox"]):hover{
+outline: 0;
+
+}
+
+#area_adm{
+    background-color :rgb(247, 247, 247);
+    background-position: center;
+    margin-left: 16.5vw;
+    width: 65vw;
+    height: 40vw;
+    display:  flex;
+    flex-direction: column;
+    
+    
+    
+}
+p{
+    text-align:center;  
+    font-size: 3vw;
+}
+#btn{
+    margin-left: 2vw;
+    font-size: 1.5vw;
+}
+#email{
+    width: 40vw;
+    font-size: 1.5vw;
+}
+#senha{
+    width: 20vw;
+    font-size: 1.5vw;
+}

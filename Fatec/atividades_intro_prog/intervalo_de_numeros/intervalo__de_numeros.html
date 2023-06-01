@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="numbers.css">
+    <title>Intervalo de Números</title>
+</head>
+<body>
+    <div class="container ">
+        <div id="inputs">
+            <h2>Digite um intervado:</h2>
+            <form id="form">
+                <input type="number" placeholder="Digite o menor número" id="number1">
+                <br>
+                <input type="number" placeholder="Digite o maior número" id="number2">
+                <br>
+                <button id="button">Exibir</button>
+            </form>
+        </div>
+        
+        <div id="result"></div>
+
+    </div>
+    <script>
+
+        function calculate (event){  
+            
+            event.preventDefault();
+            let n1 = parseFloat(number1.value)
+            let n2 = parseFloat(number2.value)
+            if(!n1 && !n2){
+                result.innerHTML = `Favor digitar número válido nos dois campos`
+                return
+            }
+            if(!n1){
+                result.innerHTML = `Favor digitar número válido no primeiro campo`
+                return
+            }
+            if(!n2){
+                result.innerHTML = `Favor digitar número válido no segundo campo`
+                return
+            }
+            result.innerHTML ="<h2>O intervalo dos números digitados são:</h2><br>"
+            for (let i = n2 ; n1 < i ; i--){
+                result.innerHTML += `${i}, `
+            }
+            result.innerHTML += `${n1}`
+
+        }
+
+        form.addEventListener("submit" , calculate)
+    
+
+
+
+    </script>
+    
+</body>
+</html>

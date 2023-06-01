@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaskara</title>
+</head>
+<body>
+    <script>
+        alert('Digite os Números para ser realizado a fórmula de bhaskara')
+        numero1  =  prompt('Primeiro Número')
+        numero2  =  prompt('Segundo Número')
+        numero3  =  prompt('Terceiro Número')
+
+
+        var delta = (parseFloat(numero2) * parseFloat(numero2)) -4 * parseFloat(numero1)* parseFloat(numero3)
+        delta2 = Math.sqrt(delta)
+        if(delta <= 0){
+            document.write('não existe delta negativo')
+        }else{
+            let final1 =(-parseFloat(numero2)+ delta2)/ (2 * parseFloat(numero1))
+            let final2 = (-parseFloat(numero2) - delta2)/ (2 * parseFloat(numero1))
+            document.write('Os resultados são : <br>', final1 ,'<br>ou<br>' , final2 )
+        }
+        
+
+
+        
+    </script>
+    
+</body>
+</html>

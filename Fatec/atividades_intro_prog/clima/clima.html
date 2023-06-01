@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clima.css">
+    <title>Clima</title>
+</head>
+<body>
+    <h2>Seja bem-vindo!!!</h2>
+
+    <p>selecione um clima:</p>
+
+    <form id="form">
+        <select id="selectTemp">
+            <option value="sunny">Ensolarado</option>
+            <option value="rainy">Chuvoso</option>
+            <option value="overcast">Nublado</option>
+            <option value="snowing">Nevando</option>
+
+        </select>
+        <br>
+        <button>Enviar</button>
+
+    </form>
+
+    <div id="msg"></div>
+    <script>
+        function temp (event){
+        event.preventDefault()
+        let tempNow = selectTemp.value 
+
+        if(tempNow === 'sunny'){
+
+            msg.innerHTML = `
+                <p>O tempo colaborou, praia liberada</p>.
+            `
+
+        }else if(tempNow === 'rainy'){
+            msg.innerHTML= `
+               <p>O tempo não colaborou, praia restrita.</p>
+            `
+        }else if(tempNow === 'overcast'){
+            msg.innerHTML=`
+            <p> Praia liberada, porém tome cuidado com as nuvens de chuva.</p>
+            `
+        }else{
+
+            msg.innerHTML = `
+              <p> Praia restrita, pois la fora está muito frio.</p>
+            `
+
+        }
+    }
+    form.addEventListener('submit' , temp)
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+*{
+    text-decoration: none;
+}
+body{
+    text-align: center;
+    background-color: cornflowerblue;
+}
+#selectTemp{
+    border-radius: 6px;
+    width: 100px;
+    margin-bottom: 25px;
+  
+}
+button{
+    background-color: green;
+    border-radius: 15px;
+}
+button:hover{
+    border-color: red;
+}

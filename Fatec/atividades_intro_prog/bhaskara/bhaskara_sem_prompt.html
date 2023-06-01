@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaskara</title>
+</head>
+<style>
+    button{
+        margin-top: 1vw;
+    }
+</style>
+<body>
+    <h2>Digite os Números para ser realizado a fórmula de bhaskara:</h2>
+
+    <form id="form">
+        <p>Digite o primeiro número(a):</p>
+        <input type="number" id="first_number">
+        <br>
+        <p>Digite o segundo número(b):</p>
+        <input type="number" id="second_number">
+        <br>
+        <p>Digite o terceiro número(c):</p>
+        <input type="number" id="third_number">
+       <br>
+        
+        
+        <button>Calcular</button>
+
+
+    </form>
+
+    <div id="result"></div>
+    <script>
+        function calculate (event) {
+
+            event.preventDefault()
+            num1  =  parseFloat(first_number.value)
+            num2  =  parseFloat(second_number.value)
+            num3  =  parseFloat(third_number.value)
+
+
+            var delta = num2 * num2 -4 * num1* num3
+            delta2 = Math.sqrt(delta)
+            if(delta <= 0){
+                result.innerHTML = `Não existe delta negativo.`
+            }else{
+                let end1 =(-num2 + delta2)/ (2 * num1)
+                let end2 = (-num2 - delta2)/ (2 * num1)
+                result.innerHTML=`Os resultados são : <br> ${end1} <br>ou<br> ${end2} `
+
+            }
+            
+
+        }
+        form.addEventListener('submit', calculate)
+    </script>
+    
+</body>
+</html>

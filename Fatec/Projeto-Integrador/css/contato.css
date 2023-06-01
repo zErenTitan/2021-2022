@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+}
+#container{
+   
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    border:6px solid rgb(153, 146, 146);
+    margin-top:15px;
+    margin-left: 25%;
+}
+#container p{
+    margin-top: 10px;
+   
+}
+#container input{
+    border: 2px solid ;
+    border-radius: 6px;
+    width:25vw;
+}
+
+
+input#celular{
+    width: 81.6px;
+   
+
+}
+p#celularp{
+    text-align: left;
+ 
+
+}
+div#teldocli{
+    display: flex;
+    flex-direction: column;
+}
+div#campotel{
+ 
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+
+}
+@media (max-width:1300px){
+    #telefone{
+      
+        display: flex;
+        flex-direction: column;
+    }
+    #campotel, #enviar , #telefone, #nome {
+        padding-bottom: 0px;
+        
+    }
+    #container p{
+        margin-top: 0px;
+       
+    }
+}
+
+input#email{
+    width: 18.5vw;
+
+
+}
+textarea{
+    border: 2px solid ;
+    border-radius: 6px;
+    width: 25.2vw;
+    height: 10vw;
+}
+#enviar{
+    margin-top: 10px;
+    height: 20px;
+    background-color: green;
+    border: 2px solid ;
+    border-radius: 6px;
+ 
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#telefone{
+    display: flex;
+}
+div#r{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}

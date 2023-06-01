@@ -1,0 +1,32 @@
+div.vagas{
+   border: 0.1vw  black solid;
+   border-radius: 0.75vw;
+   padding:  0.10vw;
+
+   
+  
+}
+div.descricoes{
+    border-bottom: 0.090vw #B0E0E6 solid;
+    
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color:  rgba(148, 148, 148, 0.815);
+  
+    color: black;
+    
+    
+}
+ div#botao{
+    background-color:rgba(148, 148, 148, 0.815);
+    border-bottom: 0vw;
+    border-radius: 0.20vw;
+   
+}
+.btn-primary{
+    border-radius: 0.60vw;
+}   
+p#teste{
+    color: red;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../css/cabecalho.css">
+    <link rel="stylesheet" href="../css/rodape.css">
+    <title>Contato</title>
+   
+</head>
+<style>
+    a#selecionado{
+        text-decoration: underline 3px;
+    }
+ 
+   
+  
+</style>
+<body>
+    <header>
+        
+        <img src="../imagens/Logo Bate & Volta.png" alt="">
+    
+        <p>
+            <a  href="../index.html">Início</a>
+            | 
+            <a href="sobre_nos.html">Sobre Nós</a>
+            | 
+            <a href="">Serviços</a>
+            | 
+            <a id="selecionado"  href="contato.html">Contato</a>
+    
+        </p>
+    
+        <button>Solicitar Serviço</button>
+       
+    </header>
+    <div id="linhas">
+        <hr id="cabecalho_hr">
+        <hr id="cabecalho_hr2"> 
+    </div>
+    <div id="container">
+        <form>
+                   <p id="pnome">Nome Completo</p>
+            <input type="text" required name="nome" id="nome">
+            <p>Assunto </p>
+            <input type="text" required name="titulo" id="titulo">
+     
+            <div id="telefone">
+                <div id="campotel">
+                    <p id="fixop">E-mail</p>
+                    <input type="email" name="" id="email">
+                    
+                </div>
+                <div id="teldocli">
+                    <p id="celularp">Celular</p>
+                    <input type="tel" name="" id="celular" maxlength="11">
+                
+                    
+                    
+                </div>
+               
+            </div>
+            <p>Mensagem</p>
+            <textarea name="" id="" style="resize: none"></textarea>
+            <button id="enviar" type="submit">Enviar</button>
+        </form>
+
+    </div>
+    <div id="r">
+        <footer>
+            <div id="rodape1">
+                <p>Siga-nos nas redes sociais:</p>
+                <div id="link">
+                    <a  href="https://www.facebook.com/"><img src="../imagens/facebook.png" alt=""></a> 
+                    
+                </div>
+            </div>
+        
+            <div id="direita">
+                <p>Entre em contato conosco:</p>
+                <p>email@email.com.br</p>
+                <div id="tel">
+                    <a href="https://wa.me/5516991031604"><img src="../imagens/whatsapp.png" alt=""></a> 
+                    <a  href="tel:+55169999999"> - (16) 99999-9999</a>
+                </div>
+            </div>
+        
+            
+            
+            
+        </footer>
+    <div id="rodape2">
+        <p>© Bate & Volta Encomendas, Todos os Direitos Reservados.</p>
+    </div>
+    </div>
+
+
+    
+</body>
+<script>
+    function onsubmit (event){
+        event.preventDefault()
+        alert("Mensagem enviada com sucesso!")
+    }
+    addEventListener("submit", onsubmit)
+    var assunto = assunto.value
+    var email = email.value
+    var nome = nome.value
+    if()
+
+</script>
+</html>

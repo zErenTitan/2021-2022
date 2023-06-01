@@ -1,0 +1,61 @@
+input:not([type="checkbox"]){
+ 
+    margin-top: 4px;
+    padding: 10px;    
+    border: 1px solid #7b66f3;
+    
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+   
+}
+input:not([type="checkbox"]):hover{
+outline: 0;
+
+}
+input[type="submit"]:hover{
+    background-color: blue;
+    color: white;
+}
+body{
+    background-image: url("../imgs/img_index.jpg");
+    background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: fixed;
+        overflow-x: hidden;
+        overflow-y:hidden;
+    
+        
+}
+.tudo{
+    margin-left: 25%;
+    text-align: center;
+   
+    width: 50%;
+    height:  48vw;
+    background-color: white;
+   align-items: center;
+  margin-top: 0vw;
+  padding: 0vw;
+  background-color :rgb(247, 247, 247);
+}
+
+#titulo{
+    font-size: 4vw;
+    margin-top: 0vw;
+    
+}
+div#login{
+    margin-top: 5vw;
+    
+    
+}
+#nome_login{
+    width: 30vw;
+}
+#titulo_login{
+    color: #190e7e;
+    font-size: 2vw;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mensagem.css">
+    <title>Mensagens personalizas por gênero</title>
+</head>
+<body>
+    <h1>Seja bem-vindo ao site de mensagens personalizas.</h1>
+    <p>Selecione seu gênero para continuar</p>
+    <form id="form">
+        <select id="selectGen">
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+        <br>
+        <button>Receber Mensagem</button>
+    </form>
+
+    <div id="msg"></div>
+    <script>
+        function msgGen (event){
+            event.preventDefault()
+            let gen = selectGen.value
+            if(gen === 'M'){
+                
+                msg.innerHTML = `
+                    <p class='homem'>Os homens de poucas palavras são os melhores.</p> `
+                    document.body.style.backgroundColor = '#87CEFA' 
+            }else{
+                msg.innerHTML = `
+                    <p id='feminino'>Você é capaz de tudo!</p>`
+                    document.body.style.backgroundColor = 'pink' 
+
+            }
+
+
+        }
+        form.addEventListener('submit', msgGen)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,13 @@
+-Imagem 1:
+Abri a imagem.
+Após, utilizei a ferramenta caneta para selecionar a imagem, depois fui em janela, demarcadores e a transformei em seleção.
+Após isso, digitei ctrl + j  para transformar em uma nova camada e, após isso, copiei a camada e colei na imagem 3.
+Diminui por meio do comando ctrl + t e a ajustei o local dela utilizando a ferramenta mover.
+-Imagem 2:
+Abri a imagem.
+Depois, selecionei a imagem por inteira, digitei ctrl + j e apaguei com a borracha até onde eu queria da imagem.
+Logo após, copiei a camada e colei e na imagem 3 posicionei ela em cima.
+Diminui por meio do comando ctrl + t e a ajustei o local dela utilizando a ferramenta mover.
+-Imagem 3:
+Abri a imagem.
+Não modifiquei esta imagem,somente utilizei ela para um fundo das imagens 1 e 2.

@@ -1,0 +1,33 @@
+body{
+    background-color:transparent;
+    background-color: white;
+}
+input:not([type="checkbox"]){
+ 
+    margin-top: 4px;
+    padding: 10px;    
+    border: 1px solid #7b66f3;
+    
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+   
+}
+input:not([type="checkbox"]):hover{
+outline: 0;
+
+}
+#dig_dia{
+    font-size: 2vw;
+   
+}
+
+div#data_hj{
+    display: flex;
+    flex-direction: row;
+}
+p#dia_de_hoje{
+    margin-right: 1vw;
+}
